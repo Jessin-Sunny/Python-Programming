@@ -1,0 +1,5 @@
+f=open("me.txt","r")
+print(f.read())
+print(f.read())
+f.seek()
+print(f.read())
