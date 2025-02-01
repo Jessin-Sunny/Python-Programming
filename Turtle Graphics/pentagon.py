@@ -4,7 +4,7 @@ y = int(input("Enter the y position(0-400) : "))
 r = float(input("Enter the r value : "))/255
 g = float(input("Enter the g value : "))/255
 b = float(input("Enter the b value : "))/255
-w = int(input("Enter the width of the square : "))
+w = int(input("Enter the width of the pentagon : "))
 t = Turtle()
 t.up()
 t.goto(x,y)
