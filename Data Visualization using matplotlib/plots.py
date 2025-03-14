@@ -1,0 +1,28 @@
+from matplotlib import pyplot as plt
+import math
+import numpy as np
+
+x = np.arange(0, math.pi*2, 0.05)
+plt.subplot(2,2,1)
+plt.plot(x, np.sin(x), 'r--', label='sin(x)')
+#plt.plot(x, np.tan(x), 'b--')
+plt.grid(True)
+plt.xlabel('X')
+plt.ylabel('sin(x)')
+plt.legend(loc='upper right')
+plt.title('Sine Wave')
+plt.subplot(2,2,2)
+plt.grid(True)
+plt.xlabel('X')
+plt.ylabel('cos(x)')
+plt.plot(x, np.cos(x), 'g--', label='cos(x)')
+plt.legend(loc='upper right')
+plt.title('Cosine Wave')
+plt.subplot(2,2,3)
+plt.grid(True)
+plt.xlabel('X')
+plt.ylabel('tan(x)')
+plt.plot(x, np.tan(x), 'g--', label='tan(x)')
+plt.legend(loc='upper right')
+plt.title('Tan Wave')
+plt.show()
