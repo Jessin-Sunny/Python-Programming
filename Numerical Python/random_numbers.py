@@ -1,0 +1,12 @@
+import numpy as np
+a = np.random.randint(10)
+print(a)
+c = np.random.rand(3, 5)
+print(c)
+b = np.random.randint(20,37, size=(3,5))
+print(b)
+np.random.shuffle(b)
+print("After Shuffling\n", b)
+d = np.random.permutation(b)
+print("After Permutation\n", d)
+print("After Permutation(no changes to original)\n", b)
