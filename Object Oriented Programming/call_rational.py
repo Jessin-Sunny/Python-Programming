@@ -1,0 +1,13 @@
+from rational import Rational
+a = Rational(5, 10)
+b = Rational(2, 5)
+print(a)
+print(b)
+print(a + b)
+print(a == b)
+print(a < b)
+print(a > b)
+print(a <= b)
+print(a >= b)
+print(a / b)
+print(a * b)
