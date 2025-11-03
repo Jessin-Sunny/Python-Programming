@@ -93,12 +93,24 @@ def print_list(head):
         print(current.data, end="->")
         current = current.next
 
+# search element in list and return it's position[not index]
+def search_key(head, key):
+    current = head
+    pos = 1
+    while current is not None:
+        if current.data == key:
+            return (True, pos)
+        current = current.next
+        pos = pos + 1
+    return (False, None)
+
 head = None
 while True:
     print("1 : INSERTION")
     print("2 : DELETION")
     print("3 : PRINTING")
-    print("4 : EXIT")
+    print("4 : SEARCHING")
+    print("5 : EXIT")
     ch = int(input("Enter your choice : "))
     if ch == 1:
         n = int(input("How many elements ? : "))
@@ -135,6 +147,13 @@ while True:
     elif ch == 3:
         print_list(head)
     elif ch == 4:
+        x = int(input("Enter the element to be searched : "))
+        result = search_key(head, x)
+        if result[0] == True:
+            print("Element ",x," found at position ",result[1])
+        else:
+            print("Element ",x," not found")
+    elif ch == 5:
         break
     else:
         print("Invalid Choice")
